@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Components/ActorComponent.h"
-#include "Sockets/Public/IPAddress.h"
+#include "IPAddress.h"
 #include "Common/UdpSocketBuilder.h"
 #include "Common/UdpSocketReceiver.h"
 #include "Common/UdpSocketSender.h"
@@ -99,7 +99,7 @@ public:
 	*/
 	bool CloseSendSocket();
 
-	/** 
+	/**
 	* Emit given bytes to send socket. If Settings.bShouldAutoOpenSend is true it will auto-open socket.
 	* Returns true if bytes emitted successfully
 	*/
@@ -181,7 +181,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "UDP Functions")
 	bool CloseSendSocket();
 
-	/** 
+	/**
 	* Start listening at given port for udp messages. Will auto-listen on BeginPlay by default. Listen IP of 0.0.0.0 means all connections.
 	*/
 	UFUNCTION(BlueprintCallable, Category = "UDP Functions")
@@ -205,7 +205,7 @@ public:
 	virtual void UninitializeComponent() override;
 	virtual void BeginPlay() override;
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
-	
+
 protected:
 	TSharedPtr<FUDPNative> Native;
 	void LinkupCallbacks();

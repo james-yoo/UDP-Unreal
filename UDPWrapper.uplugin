@@ -7,9 +7,9 @@
 	"Category": "Networking",
 	"CreatedBy": "getnamo",
 	"CreatedByURL": "http://getnamo.com/",
-	"DocsURL": "https://github.com/getnamo/udp-ue4",
+	"DocsURL": "https://github.com/getnamo/UDP-Unreal",
 	"MarketplaceURL": "",
-	"SupportURL": "https://github.com/getnamo/udp-ue4/issues",
+	"SupportURL": "https://github.com/getnamo/UDP-Unreal/issues",
 	"CanContainContent": true,
 	"Installed": false,
 	"Modules": [
